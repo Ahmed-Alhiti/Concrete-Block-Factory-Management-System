@@ -1,0 +1,627 @@
+﻿namespace WindowsFormsApp1
+{
+    partial class frmUserAccount
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserAccount));
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("المبيعات");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("المشتريات");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("الانتاج");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("الكل", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            this.dgvUser = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Propertise = new System.Windows.Forms.ToolStripMenuItem();
+            this.Delete = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblAccNote = new System.Windows.Forms.Label();
+            this.btnResetPass = new System.Windows.Forms.Button();
+            this.gbUser = new System.Windows.Forms.GroupBox();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnPassSave = new System.Windows.Forms.Button();
+            this.btnPassCancel = new System.Windows.Forms.Button();
+            this.txtRePass2 = new System.Windows.Forms.TextBox();
+            this.txtNPass = new System.Windows.Forms.TextBox();
+            this.txtCurPass = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.is_active = new System.Windows.Forms.CheckBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnAccSave = new System.Windows.Forms.Button();
+            this.btnAccCancel = new System.Windows.Forms.Button();
+            this.cbEmp = new System.Windows.Forms.ComboBox();
+            this.txtRePass = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.gbUser.SuspendLayout();
+            this.metroTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.metroTabPage2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.metroTabControl1.SuspendLayout();
+            this.metroTabPage1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // dgvUser
+            // 
+            this.dgvUser.AllowUserToAddRows = false;
+            this.dgvUser.AllowUserToResizeColumns = false;
+            this.dgvUser.AllowUserToResizeRows = false;
+            this.dgvUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUser.BackgroundColor = System.Drawing.Color.White;
+            this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvUser.ColumnHeadersHeight = 30;
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvUser.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvUser.EnableHeadersVisualStyles = false;
+            this.dgvUser.Location = new System.Drawing.Point(14, 3);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgvUser.RowHeadersVisible = false;
+            this.dgvUser.Size = new System.Drawing.Size(890, 237);
+            this.dgvUser.TabIndex = 3;
+            this.dgvUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Propertise,
+            this.Delete});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 48);
+            // 
+            // Propertise
+            // 
+            this.Propertise.Name = "Propertise";
+            this.Propertise.Size = new System.Drawing.Size(116, 22);
+            this.Propertise.Text = "خصائص";
+            this.Propertise.Click += new System.EventHandler(this.Propertise_Click);
+            // 
+            // Delete
+            // 
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(116, 22);
+            this.Delete.Text = "حذف";
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(22, 32);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblAccNote
+            // 
+            this.lblAccNote.AutoSize = true;
+            this.lblAccNote.Location = new System.Drawing.Point(120, 45);
+            this.lblAccNote.Name = "lblAccNote";
+            this.lblAccNote.Size = new System.Drawing.Size(270, 20);
+            this.lblAccNote.TabIndex = 0;
+            this.lblAccNote.Text = "   لتغيير كلمة المرور , اضغط على تغيير كلمة المرور";
+            // 
+            // btnResetPass
+            // 
+            this.btnResetPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnResetPass.FlatAppearance.BorderSize = 0;
+            this.btnResetPass.ForeColor = System.Drawing.Color.Black;
+            this.btnResetPass.Location = new System.Drawing.Point(662, 59);
+            this.btnResetPass.Name = "btnResetPass";
+            this.btnResetPass.Size = new System.Drawing.Size(222, 35);
+            this.btnResetPass.TabIndex = 22;
+            this.btnResetPass.Text = "تغيير كلمة المرور ...";
+            this.btnResetPass.UseVisualStyleBackColor = false;
+            this.btnResetPass.Click += new System.EventHandler(this.btnResetPass_Click);
+            // 
+            // gbUser
+            // 
+            this.gbUser.BackColor = System.Drawing.Color.White;
+            this.gbUser.Controls.Add(this.pictureBox2);
+            this.gbUser.Controls.Add(this.lblAccNote);
+            this.gbUser.Controls.Add(this.btnResetPass);
+            this.gbUser.Enabled = false;
+            this.gbUser.Location = new System.Drawing.Point(14, 307);
+            this.gbUser.Name = "gbUser";
+            this.gbUser.Size = new System.Drawing.Size(890, 100);
+            this.gbUser.TabIndex = 23;
+            this.gbUser.TabStop = false;
+            this.gbUser.Text = "تغيير كلمة المرور";
+            // 
+            // metroTabPage3
+            // 
+            this.metroTabPage3.Controls.Add(this.gbUser);
+            this.metroTabPage3.Controls.Add(this.dgvUser);
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 1;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(920, 410);
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "اعدادات الحسابات";
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 1;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(669, 69);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(82, 18);
+            this.lblUsername.TabIndex = 36;
+            this.lblUsername.Text = "Username";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(757, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.BackColor = System.Drawing.Color.White;
+            this.metroTabPage2.Controls.Add(this.label10);
+            this.metroTabPage2.Controls.Add(this.label9);
+            this.metroTabPage2.Controls.Add(this.label8);
+            this.metroTabPage2.Controls.Add(this.lblUsername);
+            this.metroTabPage2.Controls.Add(this.pictureBox1);
+            this.metroTabPage2.Controls.Add(this.btnPassSave);
+            this.metroTabPage2.Controls.Add(this.btnPassCancel);
+            this.metroTabPage2.Controls.Add(this.txtRePass2);
+            this.metroTabPage2.Controls.Add(this.txtNPass);
+            this.metroTabPage2.Controls.Add(this.txtCurPass);
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 1;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(920, 410);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "اعادة تعيين كلمة المرور";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(665, 237);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 20);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "نأكيد كلمة المرور :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(665, 179);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 20);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "كلمة المرور الجديدة :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(665, 124);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 20);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "كلمة المرور الحاليه :";
+            // 
+            // btnPassSave
+            // 
+            this.btnPassSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPassSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnPassSave.FlatAppearance.BorderSize = 0;
+            this.btnPassSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassSave.ForeColor = System.Drawing.Color.White;
+            this.btnPassSave.Location = new System.Drawing.Point(234, 321);
+            this.btnPassSave.Name = "btnPassSave";
+            this.btnPassSave.Size = new System.Drawing.Size(94, 35);
+            this.btnPassSave.TabIndex = 33;
+            this.btnPassSave.Text = "حفظ";
+            this.btnPassSave.UseVisualStyleBackColor = false;
+            this.btnPassSave.Click += new System.EventHandler(this.btnPassSave_Click);
+            // 
+            // btnPassCancel
+            // 
+            this.btnPassCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPassCancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPassCancel.FlatAppearance.BorderSize = 0;
+            this.btnPassCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnPassCancel.Location = new System.Drawing.Point(114, 321);
+            this.btnPassCancel.Name = "btnPassCancel";
+            this.btnPassCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnPassCancel.TabIndex = 34;
+            this.btnPassCancel.Text = "الغاء";
+            this.btnPassCancel.UseVisualStyleBackColor = false;
+            // 
+            // txtRePass2
+            // 
+            this.txtRePass2.Location = new System.Drawing.Point(114, 234);
+            this.txtRePass2.Name = "txtRePass2";
+            this.txtRePass2.Size = new System.Drawing.Size(527, 26);
+            this.txtRePass2.TabIndex = 11;
+            this.txtRePass2.UseSystemPasswordChar = true;
+            // 
+            // txtNPass
+            // 
+            this.txtNPass.Location = new System.Drawing.Point(114, 176);
+            this.txtNPass.Name = "txtNPass";
+            this.txtNPass.Size = new System.Drawing.Size(527, 26);
+            this.txtNPass.TabIndex = 9;
+            this.txtNPass.UseSystemPasswordChar = true;
+            // 
+            // txtCurPass
+            // 
+            this.txtCurPass.Enabled = false;
+            this.txtCurPass.Location = new System.Drawing.Point(114, 121);
+            this.txtCurPass.Name = "txtCurPass";
+            this.txtCurPass.Size = new System.Drawing.Size(527, 26);
+            this.txtCurPass.TabIndex = 7;
+            this.txtCurPass.UseSystemPasswordChar = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 481);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 80);
+            this.panel1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(7, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 43);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "User Setting";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // metroTabControl1
+            // 
+            this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.Controls.Add(this.metroTabPage3);
+            this.metroTabControl1.Controls.Add(this.metroTabPage2);
+            this.metroTabControl1.Location = new System.Drawing.Point(32, 6);
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.RightToLeftLayout = true;
+            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.Size = new System.Drawing.Size(928, 452);
+            this.metroTabControl1.TabIndex = 6;
+            this.metroTabControl1.UseSelectable = true;
+            // 
+            // metroTabPage1
+            // 
+            this.metroTabPage1.BackColor = System.Drawing.Color.White;
+            this.metroTabPage1.Controls.Add(this.is_active);
+            this.metroTabPage1.Controls.Add(this.treeView1);
+            this.metroTabPage1.Controls.Add(this.btnAccSave);
+            this.metroTabPage1.Controls.Add(this.btnAccCancel);
+            this.metroTabPage1.Controls.Add(this.cbEmp);
+            this.metroTabPage1.Controls.Add(this.txtRePass);
+            this.metroTabPage1.Controls.Add(this.txtPass);
+            this.metroTabPage1.Controls.Add(this.txtUsername);
+            this.metroTabPage1.Controls.Add(this.label6);
+            this.metroTabPage1.Controls.Add(this.label5);
+            this.metroTabPage1.Controls.Add(this.label4);
+            this.metroTabPage1.Controls.Add(this.label3);
+            this.metroTabPage1.Controls.Add(this.label2);
+            this.metroTabPage1.HorizontalScrollbarBarColor = true;
+            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.HorizontalScrollbarSize = 1;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(920, 410);
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "انشاء حساب مستخدم";
+            this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.VerticalScrollbarSize = 1;
+            // 
+            // is_active
+            // 
+            this.is_active.AutoSize = true;
+            this.is_active.Checked = true;
+            this.is_active.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.is_active.Location = new System.Drawing.Point(611, 325);
+            this.is_active.Name = "is_active";
+            this.is_active.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.is_active.Size = new System.Drawing.Size(50, 24);
+            this.is_active.TabIndex = 34;
+            this.is_active.Text = "نشط";
+            this.is_active.UseVisualStyleBackColor = true;
+            // 
+            // treeView1
+            // 
+            this.treeView1.CheckBoxes = true;
+            this.treeView1.ImageIndex = 0;
+            this.treeView1.ImageList = this.imageList1;
+            this.treeView1.Location = new System.Drawing.Point(134, 214);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Name = "Sales";
+            treeNode1.Text = "المبيعات";
+            treeNode2.Name = "Purch";
+            treeNode2.Text = "المشتريات";
+            treeNode3.Name = "Production";
+            treeNode3.Text = "الانتاج";
+            treeNode4.Name = "All";
+            treeNode4.Text = "الكل";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode4});
+            this.treeView1.SelectedImageIndex = 0;
+            this.treeView1.Size = new System.Drawing.Size(527, 96);
+            this.treeView1.TabIndex = 33;
+            this.treeView1.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterCheck);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "key_20px.png");
+            // 
+            // btnAccSave
+            // 
+            this.btnAccSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAccSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnAccSave.FlatAppearance.BorderSize = 0;
+            this.btnAccSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccSave.ForeColor = System.Drawing.Color.White;
+            this.btnAccSave.Location = new System.Drawing.Point(252, 357);
+            this.btnAccSave.Name = "btnAccSave";
+            this.btnAccSave.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnAccSave.Size = new System.Drawing.Size(94, 35);
+            this.btnAccSave.TabIndex = 31;
+            this.btnAccSave.Text = "حفظ";
+            this.btnAccSave.UseVisualStyleBackColor = false;
+            this.btnAccSave.Click += new System.EventHandler(this.btnAccSave_Click);
+            // 
+            // btnAccCancel
+            // 
+            this.btnAccCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAccCancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAccCancel.FlatAppearance.BorderSize = 0;
+            this.btnAccCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnAccCancel.Location = new System.Drawing.Point(134, 357);
+            this.btnAccCancel.Name = "btnAccCancel";
+            this.btnAccCancel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnAccCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnAccCancel.TabIndex = 32;
+            this.btnAccCancel.Text = "الغاء";
+            this.btnAccCancel.UseVisualStyleBackColor = false;
+            this.btnAccCancel.Click += new System.EventHandler(this.btnAccCancel_Click);
+            // 
+            // cbEmp
+            // 
+            this.cbEmp.FormattingEnabled = true;
+            this.cbEmp.Location = new System.Drawing.Point(134, 171);
+            this.cbEmp.Name = "cbEmp";
+            this.cbEmp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbEmp.Size = new System.Drawing.Size(527, 28);
+            this.cbEmp.TabIndex = 4;
+            // 
+            // txtRePass
+            // 
+            this.txtRePass.Location = new System.Drawing.Point(134, 120);
+            this.txtRePass.Name = "txtRePass";
+            this.txtRePass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtRePass.Size = new System.Drawing.Size(527, 26);
+            this.txtRePass.TabIndex = 3;
+            this.txtRePass.UseSystemPasswordChar = true;
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(134, 69);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtPass.Size = new System.Drawing.Size(527, 26);
+            this.txtPass.TabIndex = 2;
+            this.txtPass.UseSystemPasswordChar = true;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(134, 18);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtUsername.Size = new System.Drawing.Size(527, 26);
+            this.txtUsername.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(698, 214);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label6.Size = new System.Drawing.Size(123, 20);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "السماح بالوصول الى : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(698, 174);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label5.Size = new System.Drawing.Size(97, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "حساب الموظف : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(698, 123);
+            this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label4.Size = new System.Drawing.Size(102, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "تأكيد كلمة المرور :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(698, 72);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(75, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "كلمة المرور :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(694, 21);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "اسم المستخدم :";
+            // 
+            // frmUserAccount
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ControlBox = false;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.metroTabControl1);
+            this.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "frmUserAccount";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Text = "حسابان المستخدمين";
+            this.Load += new System.EventHandler(this.frmUserAccount_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.gbUser.ResumeLayout(false);
+            this.gbUser.PerformLayout();
+            this.metroTabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.metroTabControl1.ResumeLayout(false);
+            this.metroTabPage1.ResumeLayout(false);
+            this.metroTabPage1.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private System.Windows.Forms.DataGridView dgvUser;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblAccNote;
+        public System.Windows.Forms.Button btnResetPass;
+        private System.Windows.Forms.GroupBox gbUser;
+        private MetroFramework.Controls.MetroTabPage metroTabPage3;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage2;
+        public System.Windows.Forms.Button btnPassSave;
+        public System.Windows.Forms.Button btnPassCancel;
+        private System.Windows.Forms.TextBox txtRePass2;
+        private System.Windows.Forms.TextBox txtNPass;
+        private System.Windows.Forms.TextBox txtCurPass;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        public System.Windows.Forms.Button btnAccSave;
+        public System.Windows.Forms.Button btnAccCancel;
+        private System.Windows.Forms.ComboBox cbEmp;
+        private System.Windows.Forms.TextBox txtRePass;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox is_active;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Propertise;
+        private System.Windows.Forms.ToolStripMenuItem Delete;
+    }
+}
