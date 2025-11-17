@@ -1,9 +1,0 @@
-D:\مشروع التخرج\Business\bin\Debug\Business.dll
-D:\مشروع التخرج\Business\bin\Debug\Business.pdb
-D:\مشروع التخرج\Business\bin\Debug\DataAccessLayer.dll
-D:\مشروع التخرج\Business\bin\Debug\DataAccessLayer.pdb
-D:\مشروع التخرج\Business\obj\Debug\Business.dll
-D:\مشروع التخرج\Business\obj\Debug\Business.pdb
-D:\مشروع التخرج\Business\obj\Debug\Business.csproj.AssemblyReference.cache
-D:\مشروع التخرج\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
-D:\مشروع التخرج\Business\obj\Debug\Business.csproj.Up2Date
