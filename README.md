@@ -1,94 +1,80 @@
-# Concrete Block Factory Management System
+# 🧱 Concrete Block Factory Management System
 
-A desktop-based **3-tier architecture** application built using **C# (WinForms)**, **.NET Framework**, and **SQL Server**, designed to manage all daily operations inside a concrete block factory, including production, purchases, inventory, sales, and financial processes.
+![C#](https://img.shields.io/badge/Language-C%23-blue) 
+![WinForms](https://img.shields.io/badge/Framework-WinForms-orange)
+![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red)
 
----
+A **desktop-based 3-tier application** built using **C# (WinForms), .NET Framework, and SQL Server**, designed to manage daily operations in a concrete block factory efficiently.
 
-## 🧱 Overview
-
-The **Concrete Block Factory Management System** provides a complete workflow solution for managing the daily activities of concrete block production.  
-It ensures accuracy, real-time data tracking, and smooth coordination between production, inventory, suppliers, and finance.
-
-The system follows a **3-Tier Architecture** to enhance scalability, maintainability, and data security.
+The system covers production, inventory, suppliers, sales, and financial management, with real-time monitoring and reporting capabilities.  
+It also includes a **battery percentage indicator** displayed in the system using **Win32 API**, helping operators monitor laptop or UPS power status during factory operations.
 
 ---
 
-## 🧩 Core Features
+## ✨ Key Features
 
-### 🏭 Production Management
-- Daily production entry for concrete blocks.
-- Track quantities produced per day.
-- Calculate material usage based on production output.
+> 💡 **Production Management**
+- Daily production entry for concrete blocks.  
+- Track production quantities and material usage.  
 
-### 🛒 Raw Material Purchasing
-- Record purchase orders for raw materials (cement, sand, gravel, etc.).
-- Track supplier deliveries and invoice amounts.
-- Maintain supplier histories and outstanding balances.
+> 💡 **Raw Material Purchasing**
+- Record purchases of cement, sand, gravel, etc.  
+- Manage supplier deliveries and invoices.  
+- Maintain supplier payment history.
 
-### 📦 Real-Time Inventory Tracking
-- Auto-update inventory on production, sales, and purchases.
-- Monitor raw materials and finished products.
-- Alerts when stock reaches minimum threshold.
+> 💡 **Sales & Customer Management**
+- Register and manage customer orders.  
+- Generate sales invoices and track payments.
 
-### 💰 Sales and Customer Management
-- Register customers and manage their orders.
-- Generate sales invoices.
-- Track customer balances and payments.
+> 💡 **Inventory Tracking**
+- Real-time inventory updates for raw materials and finished products.  
+- Alerts when stock reaches minimum levels.  
 
-### 🧾 Supplier Payments & Financial Transactions
-- Record supplier payment vouchers.
-- Track payable accounts and supplier balances.
+> 💡 **Financial & Supplier Transactions**
+- Record supplier payments and vouchers.  
+- Monitor accounts payable and outstanding balances.
 
-### 🔄 Currency & Exchange Rate Support
-- Set daily exchange rates.
-- Convert transactions between currencies automatically.
+> 💡 **Reports & Analytics**
+- Detailed production, purchase, sales, and transaction reports.  
+- Inventory movement reports for better planning.
 
-### 📊 Reports & Analytics
-Generate detailed reports including:
-- Daily production reports
-- Purchase reports
-- Sales reports
-- Inventory movement reports
-- Financial transactions
-- Supplier and customer statements
-
-### 🔐 User Roles & Access Control
-- Role-based permissions  
-- Admin, accountant, production manager, warehouse officer, etc.
-- Ensures secure access to sensitive financial and operational data.
+> 💡 **Battery Status Indicator**
+- Display current battery percentage directly in the system UI.  
+- Implemented using **Win32 API** for accurate Windows system integration.
 
 ---
 
 ## 🏗 Architecture
-- **Presentation Layer:** WinForms UI  
-- **Business Logic Layer (BLL)**  
-- **Data Access Layer (DAL):** SQL Server + ADO.NET  
 
-This separation ensures better maintainability and easier scalability.
+**3-Tier Architecture** ensures maintainability, scalability, and secure data management.
 
 ---
 
 ## 🛠 Technologies Used
-- C# – .NET Framework  
-- WinForms  
-- SQL Server  
-- ADO.NET  
-- 3-Tier Architecture  
+
+| Layer | Technology |
+|-------|-----------|
+| UI / Presentation | WinForms |
+| Logic / Business | C# – .NET Framework |
+| Data / Storage | SQL Server + ADO.NET |
+| Architecture | 3-Tier |
 
 ---
 
 ## 📥 Installation & Setup
 
-### 1️⃣ Open the Project
-- Open the solution file (`.sln`) using **Visual Studio**.
+1️⃣ **Open Project**  
+Open the `.sln` solution file in **Visual Studio**.
 
-### 2️⃣ Restore Dependencies
-- Restore **NuGet packages** (if required).
+2️⃣ **Restore Dependencies**  
+Restore **NuGet packages** if needed.
 
-### 3️⃣ Prepare the Database
-- Open **SQL Server Management Studio (SSMS)**.
-- Execute the provided `.sql` script to create tables, stored procedures, and seed data.
+3️⃣ **Prepare the Database**  
+Open **SQL Server Management Studio (SSMS)** and run the provided `.sql` script to create tables and seed initial data.
 
-### 4️⃣ Update Configuration
-- Set your connection string in : DataAccessLayer\clsConnection.cs
-  
+4️⃣ **Update Configuration**  
+Set your SQL Server connection string in: DataAccessLayer\clsConnection.cs
+
+5️⃣ **Run Application**  
+Press **F5** in Visual Studio to launch the system.
+
